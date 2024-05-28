@@ -655,6 +655,8 @@
   height: 100px;
   display: flex;
   position: absolute;
+  top: 126.5px;
+  left: 220px;
 }
 
 .icon_box.position-change {
@@ -714,6 +716,11 @@
   .tab_bg-image {
     object-fit: cover;
     height: 100%;
+  }
+
+  .icon_box {
+    top: 32.5%;
+    left: 39%;
   }
 }
 
