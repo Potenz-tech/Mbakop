@@ -82,6 +82,7 @@
 }
 
 .slide {
+  z-index: 1;
   background-color: #000;
   background-image: url('../images/CINEMA-DCP-4K-1.png');
   background-position: 0 0;
@@ -104,14 +105,10 @@
   height: 100%;
   padding-right: 150px;
   display: flex;
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
 }
 
 .heading-h1 {
+  z-index: 1111;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(315deg, #979797, #fff);
   -webkit-background-clip: text;
@@ -402,6 +399,10 @@
   margin-top: 45px;
 }
 
+.text_content {
+  position: relative;
+}
+
 .tab_heading {
   color: #fff;
   margin-bottom: 20px;
@@ -418,6 +419,7 @@
   margin-bottom: 20px;
   font-size: 24px;
   line-height: 32px;
+  text-decoration: none;
 }
 
 .paragraph.align-center {
@@ -429,6 +431,8 @@
   color: #d7200e;
   text-decoration: none;
   transition: all .5s;
+  display: inline;
+  position: relative;
 }
 
 .red:hover {
@@ -682,6 +686,33 @@
   position: relative;
 }
 
+.mask {
+  position: static;
+}
+
+.image-7 {
+  z-index: 1000;
+  transition: opacity .5s;
+  display: none;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: -43%;
+}
+
+.tabs_span {
+  color: #d7200e;
+  text-decoration: none;
+}
+
+.tabs_span:hover {
+  color: #fff;
+}
+
+.link {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 991px) {
   .text-block {
     margin-left: 0;
@@ -738,16 +769,22 @@
   }
 
   .content-tabs-menu {
+    z-index: -222;
     grid-column-gap: 16px;
     grid-row-gap: 16px;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
     display: grid;
+    position: static;
   }
 
   .divider {
     display: none;
+  }
+
+  .content_tab {
+    z-index: 222;
   }
 
   .content_wrap {
@@ -767,6 +804,17 @@
   .icon_box {
     top: 32.5%;
     left: 39%;
+  }
+
+  .image-7 {
+    z-index: 11111;
+    max-width: 30%;
+    display: none;
+    position: absolute;
+    top: auto;
+    bottom: -26%;
+    left: 8%;
+    right: auto;
   }
 }
 
@@ -832,6 +880,12 @@
 
   .content_tab-link._00ffd1.height, .content_tab-link._00ffd1.height.w--current {
     min-height: 79px;
+  }
+
+  .image-7 {
+    display: none;
+    bottom: -15%;
+    left: 14%;
   }
 }
 
@@ -1026,6 +1080,15 @@
   .icon_box {
     top: 37.5%;
     left: 40%;
+  }
+
+  .image-7 {
+    max-width: 50%;
+    display: none;
+    top: -19%;
+    bottom: auto;
+    left: 28%;
+    right: auto;
   }
 }
 
