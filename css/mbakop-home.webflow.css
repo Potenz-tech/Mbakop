@@ -919,7 +919,7 @@ h2 {
 }
 
 .form-text-field::placeholder {
-  color: #667085;
+  color: #f0e5e5;
   font-size: 16px;
   line-height: 24px;
 }
@@ -936,7 +936,7 @@ h2 {
 }
 
 .message-input-field {
-    color: #f0e5e5;
+    
   background-color: #242930;
   border: 0 solid #000;
   border-radius: 8px;
